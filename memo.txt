@@ -87,7 +87,7 @@ git merge [マージするbranch名]
 同じブランチで複数人が作業をしてそれぞれpushすると、
 後からpushする側にエラー(reject)が発生する
 リモートの最新ブランチをローカルにmergeする(=fetch)ことで、
-同ブランチでもpushできるようになる
+同ブランチでもpushできる状態になる
 
 
 ■ git fetch origin develop
@@ -98,19 +98,36 @@ git merge [マージするbranch名]
 -a :  リモートも含めたブランチ一覧を表示する
 
 
-■
+■ pullとfetchの違い
+git pull develop は以下２つのコマンドのショートカット
+・git fetch origin (リモートから最新ブランチをダウンロード)
+・git merge origin/develop (ダウンロードした最新ブランチをローカルにmerge)
 
 
-■
+■ rebase
+・git fetch origin (リモートから最新ブランチをダウンロード)
+・git merge origin/develop (ダウンロードした最新ブランチをローカルにmerge)
+・git push origin (リモートにアップロード)
+↓のコマンドでも同じ効果となる
+・git fetch origin (リモートから最新ブランチをダウンロード)
+・git rebase origin/develop (ダウンロードした最新ブランチをローカルにmerge)
+・git push origin -f (リモートにアップロード)
 
 
-■
+■ rebaseのコミットツリー
+commitツリーがきれいになる
+使わなくても良い、好みの問題
+pushの -f オプションは、ローカルを神としてリモートを強制的に書き換える危険なコマンドのため注意が必要
 
 
-■
+■ コンフリクト
+複数人が同じファイルの同じ行に編集を加えた場合、コンフリクトが発生する
+pullする時にコンフリクトエラーが発生した場合、手動で該当箇所を修正する。
+（Gitはどちらが正しいのか判断できない）
 
 
-■
+■ git reset
+
 
 
 ■
