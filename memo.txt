@@ -1,4 +1,11 @@
-■ リモートリポジトリからローカルリポジトリにコピーする
+
+
+■ 参考資料
+https://www.youtube.com/watch?v=LDOR5HfI_sQ
+
+
+■ git clone
+新規にリモートリポジトリからローカルリポジトリにコピーする
 git clone [クローンしたいリポジトリ]
 
 ex.
@@ -19,3 +26,39 @@ git add . (=全てファイルをステージングする)
 ■ git commit -m "コメットメッセージ"
 ステージングされたファイルをgitに保存する
 -m : コミットメッセージを残す
+
+
+■ git log
+コメットの履歴を表示する
+
+
+■ git push origin
+リモートにアップロードを行う
+originはリモートサーバのことを指している
+
+
+■ git pull origin
+リモートからローカルにリポジトリをダウンロードする
+注：cloneは初回のダウンロード時のみ使用する
+
+
+■ ブランチ
+gitの変更履歴を枝分かれさせる機能
+本番環境に影響を及ぼしたくない時に分岐させたブランチで作業する
+元祖の変更履歴をmasterと呼ぶ
+
+
+■ git checkout -b develop main
+mainからdevelopという名前のブランチを作成
+-b : 同時にdevelopブランチに移動する
+
+
+■ git branch
+branchの一覧と現在作業中のブランチを確認する。
+
+
+■ git checkout main
+mainブランチに移動する
+
+
+■
