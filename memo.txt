@@ -1,0 +1,8 @@
+■ リモートリポジトリからローカルリポジトリにコピーする
+git clone [クローンしたいリポジトリ]
+
+ex.
+git clone https://github.com/TAPStar/hellow_git.git
+
+
+■
