@@ -64,3 +64,10 @@ mainブランチに移動する
 
 ■ git pull origin develop
 developのbranchでリモートにアップロードする
+
+
+■ git merge
+分岐したブランチを統合する
+まずマージ先のbranchに移動し
+git merge [マージするbranch名]
+
