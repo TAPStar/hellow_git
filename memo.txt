@@ -51,6 +51,7 @@ gitの変更履歴を枝分かれさせる機能
 ■ git checkout -b develop main
 mainからdevelopという名前のブランチを作成
 -b : 同時にdevelopブランチに移動する
+分岐後も分岐前のコミット情報は残る
 
 
 ■ git branch
@@ -61,4 +62,5 @@ branchの一覧と現在作業中のブランチを確認する。
 mainブランチに移動する
 
 
-■
+■ git pull origin develop
+developのbranchでリモートにアップロードする
