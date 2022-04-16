@@ -127,11 +127,20 @@ pullする時にコンフリクトエラーが発生した場合、手動で該�
 
 
 ■ git reset
+git reset -hard HEAD
+編集内容を破棄して最終コミットの状態に戻る
 
 
+■ git stash
+編集内容を破棄して最終コミットの状態に戻る
+git stash pop で破棄した編集内容を元に戻すことができる
 
-■
-
+ex.
+誤ったブランチで作業していた場合、
+git stash で最終コミット状態に戻す。
+(変更内容があるとcommitするまでcheckoutでエラーとなる)
+checkoutで正しいブランチに移動して、
+git stash pop で編集内容を貼り付けする
 
 ■
 
