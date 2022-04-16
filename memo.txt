@@ -75,3 +75,47 @@ developのbranchでリモートにアップロードする
 git merge [マージするbranch名]
 
 
+■ pull request
+あるブランチをmasterにマージすることを承認者に対して申請すること
+承認者が変更差分をレビューし
+・コメントを記入したり
+・差し戻したり
+・承認する(merge pull request)
+
+
+■ fetch
+同じブランチで複数人が作業をしてそれぞれpushすると、
+後からpushする側にエラー(reject)が発生する
+リモートの最新ブランチをローカルにmergeする(=fetch)ことで、
+同ブランチでもpushできるようになる
+
+
+■ git fetch origin develop
+リモートの最新のdevelopブランチをダウンロードする
+
+
+■ git branch -a
+-a :  リモートも含めたブランチ一覧を表示する
+
+
+■
+
+
+■
+
+
+■
+
+
+■
+
+
+■
+
+
+■
+
+
+■
+
+
