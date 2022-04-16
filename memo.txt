@@ -52,6 +52,9 @@ gitの変更履歴を枝分かれさせる機能
 mainからdevelopという名前のブランチを作成
 -b : 同時にdevelopブランチに移動する
 分岐後も分岐前のコミット情報は残る
+ex.
+git checkout -b develop2 origin/main
+リモートのmainブランチ化から分岐したdevelop2ブランチを作成し移動する。
 
 
 ■ git branch
@@ -70,4 +73,5 @@ developのbranchでリモートにアップロードする
 分岐したブランチを統合する
 まずマージ先のbranchに移動し
 git merge [マージするbranch名]
+
 
