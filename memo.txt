@@ -5,4 +5,17 @@ ex.
 git clone https://github.com/TAPStar/hellow_git.git
 
 
-■
+■ git status
+gitに管理されているファイル一覧を表示
+
+
+■ git add
+指定したファイルをgitの管理下にある状態にする　=　ステージングする
+ex.
+git add memo.txt
+git add . (=全てファイルをステージングする)
+
+
+■ git commit -m "コメットメッセージ"
+ステージングされたファイルをgitに保存する
+-m : コミットメッセージを残す
